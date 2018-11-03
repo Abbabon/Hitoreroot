@@ -2,7 +2,7 @@
 
 ## About:
 
-The kalfi_geocode script
+The kalfi_geocode script queries [Google Geo API](https://developers.google.com/maps/documentation/geocoding/intro) to enrich kalfi addresses.
 
 ## Installation:
 The script runs via nodeJS. [You can download and install it here](https://nodejs.org/en/download/)
