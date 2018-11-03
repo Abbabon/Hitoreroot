@@ -2,7 +2,7 @@
 
 ## About:
 
-The kalfi_geocode script queries [Google Geo API](https://developers.google.com/maps/documentation/geocoding/intro) to enrich kalfi addresses.
+The kalfi_geocode script queries [Google Geo API](https://developers.google.com/maps/documentation/geocoding/intro) to enrich Kalfi addresses.
 
 ## Installation:
 The script runs via nodeJS. [You can download and install it here](https://nodejs.org/en/download/)
@@ -25,7 +25,7 @@ Insert you google API token via the GOOGLE_API_TOKEN variable.
 
 ## Usage:
 
-The source csv is called 'accessable_kalfi.csv'. An xlsx file is included for posterity.
+The source CSV is called 'accessable_kalfi.csv'. An xlsx file is included for posterity.
 
 After running, the output is written to accessable_kalfi_output.csv
 
