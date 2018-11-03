@@ -10,7 +10,7 @@ const parser = parse({
 });
 
 const baseRequest = 'https://maps.googleapis.com/maps/api/geocode/json';
-const key = 'AIzaSyA0IuxSaIqoHw1RjwVji67XCBY5ry3zIG8'
+const key = process.env.GOOGLE_API_TOKEN
 
 const transformer = transform(function(record, callback){
   setTimeout(function(){
@@ -50,6 +50,6 @@ const transformer = transform(function(record, callback){
       console.log("Error: " + err.message);
       callback(null, record.concat(['error: ',err.message]).join(',')+'\n')
     });
-  }, 500)}, { parallel: 5 });
+  }, 500)}, { parallel: parseInt(process.env.PARALLEL_GEO_QUERIES) });
 
 fs.createReadStream(__dirname+'/accessable_kalfi.csv').pipe(parser).pipe(transformer).pipe(fs.createWriteStream(__dirname+'/accessable_kalfi_output.csv'));

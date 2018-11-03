@@ -25,12 +25,18 @@ Insert you google API token via the GOOGLE_API_TOKEN variable.
 
 ## Usage:
 
-Run the script by running:
+The source csv is called 'accessable_kalfi.csv'. An xlsx file is included for posterity.
+
+After running, the output is written to accessable_kalfi_output.csv
+
+Run the script via:
 
 > node kalfi_geocode.js
 
-The source csv is called 'accessable_kalfi.csv'. An xlsx file is included for posterity.
+The geocode follows the original information, along a status, which is OK for returned queries, and ZERO_RESULTS for results that, well, had no results from the API.
 
-After running the output is written
+## Notes:
+
+Do not change the structure of the csv. Contact the script creator to add more columns.
 
 ## GLHF!
