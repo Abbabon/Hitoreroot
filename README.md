@@ -39,4 +39,8 @@ The geocode follows the original information, along a status, which is OK for re
 
 Do not change the structure of the csv. Contact the script creator to add more columns.
 
+## Meta:
+
+Feel free to post pull-requests. They will be reviewed by @Abbabon
+
 ## GLHF!
