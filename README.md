@@ -17,6 +17,7 @@ when inside the directory, run this to install required packages:
 You need to insert a file called .env to the directory, with the following values:
 
 > PARALLEL_GEO_QUERIES=5
+
 > GOOGLE_API_TOKEN=<your google api token!>
 
 The script queries 5 addresses simultaneously. You can edit it via the PARALLEL_GEO_QUERIES variable above. Don't go overboard.
